@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Playpen+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+
+
+body{
+    background-color: black;
+    overflow: hidden;
+}
+
+main::after{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 80vw;
+    /* background: linear-gradient(-230deg, #000 40%, rgba(0, 0, 0, 0)65%)no-repeat; */
+}
+
+main .personagem{
+    display: none;
+    height: 100vh;
+}
+
+main .personagem.selecionado{
+    display: block;
+}
+
+main .personagem .imagem{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 130vh;
+
+}
+
+main .personagem .imagemVdd{
+    width: 100%;
+    height: 100%;
+    min-height: 10vh;
+    /* object-fit: cover; */
+}
+
+main .personagem.selecionado .imagemafter{
+    width: 100%;
+    height: 100%;
+    min-height: 120vh;
+    /*object-fit: cover;*/
+}
+main .personagem.selecionado .imagempromessa{
+    width: 100%;
+    height: 100%;
+    min-height: 125vh;
+    object-fit: cover;
+}
+
+main .personagem.selecionado .imagemdesencontro{
+    width: 100%;
+    height: 100%;
+    min-height: 117vh;
+    filter: saturate(50%);
+    object-fit: cover;
+    filter: sepia(50%);
+}
+
+.conteudo{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 110vh;
+    max-width: 380px;
+    padding-left: 40px;
+    margin-left: -70px;
+    z-index: 1;
+}
+
+.conteudo .logo{
+    background-image: url("../imgsAfter/After_film_series_logo.png");
+    background-size: cover;
+    height: 100px;
+    width: 200px;
+    margin-bottom: 35px;
+}
+
+.conteudo .nome-personagem{
+    color: white;
+    font-size: 30px;
+    font-family: 'Agbalumo', cursive, monospace;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-shadow: 0.1em 0.1em 0.05em #af204d
+}
+
+.conteudo .descricao-personagem{
+    color: white;
+    font-size: 17px;
+    font-family:  'Playpen Sans', 'Sometype Mono', monospace;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: start;
+    text-shadow: 0 0 0.2em #e30a4fea, 0 0 0.2em #e30a4fea, 0 0 0.2em #e30a4fea, -1px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black;
+}
+
+.botoes{
+    position: fixed;
+    top:0;
+    right:0;
+    display: flex;
+    flex-direction:column;
+    min-height: 100vh;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.botoes .botao{
+    border: none;
+    background: black;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.botoes .botao img {
+    border-radius: 60%;
+    height: 80px;
+    width: 100px;
+}
+
+.botoes .botao.selecionado{
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
