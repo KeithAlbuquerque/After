@@ -1,0 +1,55 @@
+Comandos CSS para mover items nas DIVs:
+
+#1 justify-content: alinha items flexiveis ao longo do eixo principal;
+
+#principais tags:
+flex-start(default);
+flex-end;
+center;
+space-between;
+space-around;
+space-evenly;
+
+#2 align-items:determina como os itens como um todo são alinhados dentro do contêiner.
+
+#principais tags:
+flex-start;
+flex-end;
+center;
+baseline;
+stretch(default);
+
+#3 flex-direction:define a direção do eixo principal;
+
+#principais tags:
+row(default);
+row-reverse;
+column;
+column-reverse;
+
+#4 flex-wrap:especifica se os itens flexíveis são forçados em uma única linha ou podem ser agrupados em várias linhas;
+
+#principais tags:
+now-wrap:cada item cabe em uma única linha;
+wrap: os items são agrupados em linhas adicionais;
+wrap-reverse:os itens são contornados em linhas adicionais ao contrário;
+
+
+#5 flex-flow:combina flex-direction e flex-wrap, esta propriedade aceita valores das duas, separados por espaço;
+exemplo: flex-flow: row wrap;
+
+#6 align-content:determina o espaçamento entre as linhas. Quando há apenas uma linha, align-content não tem efeito.
+ 
+flex-start: As linhas são embaladas na parte superior do contêiner.
+flex-end: As linhas são embaladas no fundo do contêiner.
+center: As linhas são embaladas no centro vertical do contêiner.
+space-between: As linhas são exibidas com espaçamento igual entre elas.
+space-around: As linhas são exibidas com espaçamento igual ao seu redor.
+stretch: As linhas são esticadas para caber no contêiner.
+
+#exemplo {
+display: flex;
+flex-direction: row-reverse;
+justify-content: center;
+align-items: flex-end;
+flex-wrap: wrap;
